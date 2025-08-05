@@ -2,16 +2,16 @@ const { cmd } = require('../command');
 const config = require('../config');
 
 cmd({
-    pattern: "owner",
+    pattern: "Mani Mode",
     react: "✅", 
-    desc: "Get owner number",
+    desc: "923033096103",
     category: "main",
     filename: __filename
 }, 
 async (conn, mek, m, { from }) => {
     try {
-        const ownerNumber = config.OWNER_NUMBER; // Fetch owner number from config
-        const ownerName = config.OWNER_NAME;     // Fetch owner name from config
+        const ownerNumber = config.923033096103; // Fetch owner number from config
+        const ownerName = config.Mani mode;     // Fetch owner name from config
 
         const vcard = 'BEGIN:VCARD\n' +
                       'VERSION:3.0\n' +
@@ -22,7 +22,7 @@ async (conn, mek, m, { from }) => {
         // Send the vCard
         const sentVCard = await conn.sendMessage(from, {
             contacts: {
-                displayName: ownerName,
+                displayName: Mani Mode,
                 contacts: [{ vcard }]
             }
         });
@@ -33,8 +33,8 @@ async (conn, mek, m, { from }) => {
             caption: `╭━━〔 *𝙈𝙖𝙣𝙞_𝙈𝙙* 〕━━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• *Here is the owner details*
-┃◈┃• *Name* - ${ownerName}
-┃◈┃• *Number* ${ownerNumber}
+┃◈┃• *Name* - ${Mani Mode}
+┃◈┃• *Number* ${923033096103}
 ┃◈┃• *Version*: 2.0.0 Beta
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
