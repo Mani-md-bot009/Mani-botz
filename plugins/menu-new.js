@@ -11,9 +11,9 @@ cmd({
     filename: __filename
 }, async (conn, mek, m, { from, reply }) => {
     try {
-        const menuCaption = `╭━━━〔 *${config.BOT_NAME}* 〕━━━┈⊷
+        const menuCaption = `╭━━━〔 *${config.Mani-botz}* 〕━━━┈⊷
 ┃★╭──────────────
-┃★│ 👑 Owner : *${config.OWNER_NAME}*
+┃★│ 👑 Owner : *${config.MANI MODE }*
 ┃★╰──────────────
 ╰━━━━━━━━━━━━━━━┈⊷
 📋 *ᴄʜᴏᴏsᴇ ᴀ ᴄᴀᴛᴇɢᴏʀʏ ᴛᴏ ᴇxᴘʟᴏʀᴇ:*
@@ -40,7 +40,7 @@ cmd({
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                 newsletterJid: '120363348739987203@newsletter',
-                newsletterName: config.OWNER_NAME,
+                newsletterName: config.Rana Salman,
                 serverMessageId: 143
             }
         };
@@ -51,7 +51,7 @@ cmd({
                 return await conn.sendMessage(
                     from,
                     {
-                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/yj7zp0.png' },
+                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/vuyx2g.jpg' },
                         caption: menuCaption,
                         contextInfo: contextInfo
                     },
